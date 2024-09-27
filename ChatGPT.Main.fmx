@@ -58,19 +58,18 @@ object FormMain: TFormMain
       object ButtonMenu: TButton
         Align = Left
         Cursor = crHandPoint
-        Images = Manager.SVGIconImageList
         ImageIndex = 2
         Size.Width = 43.000000000000000000
         Size.Height = 43.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'buttonstyle_primary'
         TabOrder = 1
+        TextSettings.Trimming = None
         OnClick = ButtonMenuClick
       end
       object ButtonNewChatCompact: TButton
         Align = Right
         Cursor = crHandPoint
-        Images = Manager.SVGIconImageList
         ImageIndex = 0
         Position.X = 740.000000000000000000
         Size.Width = 43.000000000000000000
@@ -78,6 +77,7 @@ object FormMain: TFormMain
         Size.PlatformDefault = False
         StyleLookup = 'buttonstyle_primary'
         TabOrder = 0
+        TextSettings.Trimming = None
         OnClick = ButtonNewChatCompactClick
       end
       object LabelChatName: TLabel
@@ -2654,7 +2654,6 @@ object FormMain: TFormMain
         Align = Top
         Cursor = crHandPoint
         StyledSettings = [Family, Style, FontColor]
-        Images = Manager.SVGIconImageList
         ImageIndex = 0
         Margins.Bottom = 8.000000000000000000
         Size.Width = 251.000000000000000000
@@ -2665,6 +2664,7 @@ object FormMain: TFormMain
         Text = 'New chat'
         TextSettings.Font.Size = 14.000000000000000000
         TextSettings.HorzAlign = Leading
+        TextSettings.Trimming = None
         OnClick = ButtonNewChatClick
       end
       object ListBoxChatList: TListBox
@@ -2680,7 +2680,6 @@ object FormMain: TFormMain
         DisableFocusEffect = True
         ItemIndex = 0
         ItemHeight = 44.000000000000000000
-        Images = Manager.SVGIconImageList
         DefaultItemStyles.ItemStyle = 'listboxitemstyle_chat'
         DefaultItemStyles.GroupHeaderStyle = ''
         DefaultItemStyles.GroupFooterStyle = ''
@@ -2722,7 +2721,6 @@ object FormMain: TFormMain
         object ButtonAbout: TButton
           Align = Top
           Cursor = crHandPoint
-          Images = Manager.SVGIconImageList
           ImageIndex = 13
           Margins.Top = 4.000000000000000000
           Position.Y = 165.000000000000000000
@@ -2733,12 +2731,12 @@ object FormMain: TFormMain
           TabOrder = 4
           Text = 'About'
           TextSettings.HorzAlign = Leading
+          TextSettings.Trimming = None
           OnClick = ButtonAboutClick
         end
         object ButtonClear: TButton
           Align = Top
           Cursor = crHandPoint
-          Images = Manager.SVGIconImageList
           ImageIndex = 8
           Margins.Top = 4.000000000000000000
           Position.Y = 21.000000000000000000
@@ -2749,6 +2747,7 @@ object FormMain: TFormMain
           TabOrder = 2
           Text = 'Clear conversations'
           TextSettings.HorzAlign = Leading
+          TextSettings.Trimming = None
           OnClick = ButtonClearClick
           object Layout2: TLayout
             Align = Right
@@ -2765,20 +2764,19 @@ object FormMain: TFormMain
               Align = Right
               Cursor = crHandPoint
               Hint = 'Confirm'
-              Images = Manager.SVGIconImageList
               ImageIndex = 10
               Size.Width = 32.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
               StyleLookup = 'buttonstyle_confirm'
               TabOrder = 1
+              TextSettings.Trimming = None
               OnClick = ButtonClearConfirmClick
             end
             object ButtonClearCancel: TButton
               Align = Right
               Cursor = crHandPoint
               Hint = 'Cancel'
-              Images = Manager.SVGIconImageList
               ImageIndex = 11
               Position.X = 32.000000000000000000
               Size.Width = 32.000000000000000000
@@ -2786,6 +2784,7 @@ object FormMain: TFormMain
               Size.PlatformDefault = False
               StyleLookup = 'buttonstyle_confirm'
               TabOrder = 0
+              TextSettings.Trimming = None
               OnClick = ButtonClearCancelClick
             end
           end
@@ -2793,7 +2792,6 @@ object FormMain: TFormMain
         object ButtonFAQ: TButton
           Align = Top
           Cursor = crHandPoint
-          Images = Manager.SVGIconImageList
           ImageIndex = 9
           Margins.Top = 4.000000000000000000
           Position.Y = 117.000000000000000000
@@ -2804,12 +2802,12 @@ object FormMain: TFormMain
           TabOrder = 5
           Text = 'Updates & FAQ'
           TextSettings.HorzAlign = Leading
+          TextSettings.Trimming = None
           OnClick = ButtonFAQClick
         end
         object ButtonSettings: TButton
           Align = Top
           Cursor = crHandPoint
-          Images = Manager.SVGIconImageList
           ImageIndex = 12
           Margins.Top = 4.000000000000000000
           Position.Y = 69.000000000000000000
@@ -2820,6 +2818,7 @@ object FormMain: TFormMain
           TabOrder = 3
           Text = 'Settings'
           TextSettings.HorzAlign = Leading
+          TextSettings.Trimming = None
           OnClick = ButtonSettingsClick
         end
         object Line1: TLine
@@ -2832,7 +2831,6 @@ object FormMain: TFormMain
         end
         object ButtonMenuButonsSwitch: TButton
           Align = Top
-          Images = Manager.SVGIconImageList
           ImageIndex = 16
           Position.Y = 1.000000000000000000
           Size.Width = 251.000000000000000000
@@ -2841,6 +2839,7 @@ object FormMain: TFormMain
           StyleLookup = 'buttonstyle_menubuttons'
           TabOrder = 7
           Text = 'buttonstyle_menubuttons'
+          TextSettings.Trimming = None
           OnClick = ButtonMenuButonsSwitchClick
         end
       end
@@ -2864,6 +2863,7 @@ object FormMain: TFormMain
         Size.PlatformDefault = False
         StyleLookup = 'buttonstyle_primary'
         TabOrder = 0
+        TextSettings.Trimming = None
         OnClick = ButtonCloseMenuClick
       end
     end
